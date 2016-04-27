@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jeff Shapiro</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link href="css/portfolio-item.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script type='text/javascript' src='/app.js'></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- <div ui-view></div> -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Jeff Shapiro</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/projects">Projects</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/jeffreyhshapiro">Github</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/jeffreyhshapiro">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://stackoverflow.com/users/5510326/wariofan1">Stack</a>
+                    </li>
+                    <!-- <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <form method="POST" action='/inquiry'>
+                          <p>Questions, comments or inquiries?</p>
+                          <div class="form-group">
+                            <input class="form-control" type='text' placeholder="Name" name="name" />
+                          </div>
+                          <div class="form-group">
+                            <input class="form-control" type='email' placeholder="Email" name="email" />
+                          </div>
+                          <div class="form-group">
+                            <textarea class="form-control" type='text' placeholder="Message" name="message"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <input class="form-control btn btn-primary" type='submit' />
+                          </div>
+                        </form>
+                      </ul>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<!-- Page Content -->
+    <div class="container">
+
+    <!-- Portfolio Item Heading -->
+      <div class="row">
+          <div class="col-lg-12">
+              <h1 class="page-header">GYMtrition</h1>
+          </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+
+          <div class="col-md-8">
+          <a href="https://gymtrition.herokuapp.com" target='_blank'><img class="img-responsive" src="images/gymtrition.jpg" alt=""></a>
+          </div>
+
+          <div class="col-md-4">
+              <h3>Project Description</h3>
+              <p>GYMtrition is a total fitness gym solution web app that helps you locate a gym near you, lets you build a workout plan, and then make a healthy post workout meal.  It was the front-end project for the Rutgers Coding Bootcamp course.</p>
+              <p>I developed the workout plan module by sourcing data about exercises from all over the internet and organizing it into JSON.  This gave the module an 'API' full of exercise data for the user to populate into a dynamic table constructed with jQuery.  Curious to see how it works?  Check it out! </p>
+              <h3>Technologies Used</h3>
+              <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>jQuery</li>
+                  <li>MaterializeCSS</li>
+
+              </ul>
+          </div>
+
+      </div>
+
+
+    <!-- Portfolio Item Heading -->
+      <div class="row">
+          <div class="col-lg-12">
+              <h1 class="page-header">Tone Down For What</h1>
+          </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+
+          <div class="col-md-8">
+          <a href="https://toneanalyzer.herokuapp.com" target='_blank'><img class="img-responsive" src="images/tonedown.jpeg" alt=""></a>
+          </div>
+
+          <div class="col-md-4">
+              <h3>Project Description</h3>
+              <p>Tone Down For What is a service that helps you to figure out how your email sounds when you're not too sure.  It uses IBM Watson's tone analyzer API to give you several metrics about your text, including how angry, joyous, sad and analytical (and more!) you sound.  It was the back-end project for the Rutgers Coding Bootcamp course.</p>
+              <p>I enabled the Watson API to render data to Highcharts through a series of Angular controllers.  I also enabled this single page web app to perform all CRUD actions.  I enjoyed interacting with MongoDB via Angular in this project. </p>
+              <h3>Technologies Used</h3>
+              <ul>
+                  
+                  <li>AngularJS</li>
+                  <li>MongoDB</li>
+                  <li>Express</li>
+                  <li>Bootstrap</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+
+              </ul>
+          </div>
+
+      </div>
+
+       <!-- Portfolio Item Heading -->
+      <div class="row">
+          <div class="col-lg-12">
+              <h1 class="page-header">Rocks, Paper, Scissors</h1>
+          </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+
+          <div class="col-md-8">
+          <a href="https://immense-reef-1441.herokuapp.com" target='_blank'><img class="img-responsive" src="images/rps.png" alt=""></a>
+          </div>
+
+          <div class="col-md-4">
+              <h3>Project Description</h3>
+              <p>Rocks, Paper, Scissors was a front end exercise built in the beginning of the course.  After only a few weeks I was able to build this- that's good progress after starting from scratch.</p>
+              <p>I used Font Awesome for the RPS icons and jQuery logic to program the popular logic of Rocks, Paper, Scissors. </p>
+              <h3>Technologies Used</h3>
+              <ul>
+                  
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>jQuery</li>
+                  <li>Bootstrap</li>
+
+              </ul>
+          </div>
+
+      </div>
+
+         <!-- Portfolio Item Heading -->
+      <div class="row">
+          <div class="col-lg-12">
+              <h1 class="page-header">Red Vase</h1>
+          </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+
+          <div class="col-md-8">
+          <a href="http://www.myredvase.com" target='_blank'><img class="img-responsive" src="images/redvase.jpg" alt=""></a>
+          </div>
+
+          <div class="col-md-4">
+              <h3>Project Description</h3>
+              <p>Red Vase offers inspirational coloring products geared towards adults and children.  I am currently developing their webpage.  I built this under construction landing page- please check back soon to see updates on this project! </p>
+              <h3>Technologies To Be Used</h3>
+              <ul>
+                  
+                  <li>AngularJS</li>
+                  <li>MongoDB</li>
+                  <li>Express</li>
+                  <li>Bootstrap</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+
+              </ul>
+          </div>
+
+      </div>
+
+      <!-- Related Projects Row -->
+      <!-- <div class="row">
+
+          <div class="col-lg-12">
+              <h3 class="page-header">Projects</h3>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+              <a href="#">
+                  <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+              </a>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+              <a href="#">
+                  <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+              </a>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+              <a href="#">
+                  <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+              </a>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+              <a href="#">
+                  <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+              </a>
+          </div>
+
+      </div> -->
+      <!-- /.row -->
+
+        <hr>
+
+    </div>
+
+
+
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

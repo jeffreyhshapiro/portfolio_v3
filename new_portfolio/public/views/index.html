@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='shapiro'>
+<html lang="en">
 
 <head>
 
@@ -9,14 +9,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Portfolio Item - Start Bootstrap Template</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Jeff Shapiro</title>
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <link href="css/portfolio-item.css" rel="stylesheet">
-    <script type="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script type='text/javascript' src='/app.js'></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,6 +32,8 @@
 
 <body>
 
+    <!-- <div ui-view></div> -->
+
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -40,20 +45,43 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="/">Jeff Shapiro</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="/projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a target="_blank" href="https://github.com/jeffreyhshapiro">Github</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/jeffreyhshapiro">LinkedIn</a>
                     </li>
+                    <li>
+                        <a target="_blank" href="http://stackoverflow.com/users/5510326/wariofan1">Stack</a>
+                    </li>
+                    <!-- <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <form method="POST" action='/inquiry'>
+                          <p>Questions, comments or inquiries?</p>
+                          <div class="form-group">
+                            <input class="form-control" type='text' placeholder="Name" name="name" />
+                          </div>
+                          <div class="form-group">
+                            <input class="form-control" type='email' placeholder="Email" name="email" />
+                          </div>
+                          <div class="form-group">
+                            <textarea class="form-control" type='text' placeholder="Message" name="message"></textarea>
+                          </div>
+                          <div class="form-group">
+                            <input class="form-control btn btn-primary" type='submit' />
+                          </div>
+                        </form>
+                      </ul>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -61,95 +89,45 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Page Content -->
+
     <div class="container">
 
-        <!-- Portfolio Item Heading -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Portfolio Item
-                    <small>Item Subheading</small>
-                </h1>
+            <div class="col-md-5 col-lg-5">
+                <img id="jeff" src="/images/coverphoto.jpeg">
             </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Item Row -->
-        <div class="row">
-
-            <div class="col-md-8">
-                <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+            <div class="col-md-7 col-lg-7">
+                <h1 class="page-header">Who am I?</h1>
+                <p>My name is Jeff and I am a Full Stack Developer based in Central Jersey that recently graduated from Rutgers Coding Bootcamp.  My education in science and career in biology and chemistry lab work has given me a keen eye for noting the minute details, troubleshooting nebulous problems, as well as working with and interpreting data, which has lent itself well to backend development.</p> 
+                <p> My career goal is to be a developer for an innovative healthcare based product or service, where I can actualize the skills I have developed at Rutgers Coding Bootcamp while continuing to stay involved with my passion of science. Feel free to look at my previous and current projects and contact me if you would like to work together.</p>
+                <p>Curious to learn more about my background?  Check out my <a target="_blank" href="/images/ResumeJeffreyShapiro.pdf">resume</a></p>
+            <div>
+                Email: <a href="jeffreyhshapiro@gmail.com" target="_top">jeffreyhshapiro@gmail.com</a>
             </div>
 
-            <div class="col-md-4">
-                <h3>Project Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <h3>Project Details</h3>
-                <ul>
-                    <li>Lorem Ipsum</li>
-                    <li>Dolor Sit Amet</li>
-                    <li>Consectetur</li>
-                    <li>Adipiscing Elit</li>
-                </ul>
             </div>
 
         </div>
-        <!-- /.row -->
 
-        <!-- Related Projects Row -->
         <div class="row">
-
-            <div class="col-lg-12">
-                <h3 class="page-header">Related Projects</h3>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
+            <h3 class="page-header">Education</h3>
+            <p>Rutgers Coding Bootcamp, graduated April 2016</p>
+            <p>Master of Biotechnology, University of Pennsylvania, graduated December 2013</p>
+            <p>B.Sc. Environmental Science, Rutgers University, graduated May 2011</p>
         </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
-
+            
+        
+      
     </div>
+
+
+
     <!-- /.container -->
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>
 
