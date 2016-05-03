@@ -14,7 +14,7 @@ app.get('/projects', function(req, res) {
 })
 
 app.get('/resume', function(req, res) {
-  res.sendFile(__dirname + '/public/views/resume.html')
+  res.sendFile(__dirname + 'public/images/ResumeJeffreyShapiro.pdf')
 })
 
 app.listen(PORT, function(){
